@@ -1,0 +1,284 @@
+@import url(./normalize.css);
+
+/* livvic-500italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Livvic";
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/livvic-v14-latin-500italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* livvic-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/livvic-v14-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* livvic-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/livvic-v14-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* livvic-700italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Livvic";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/livvic-v14-latin-700italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* global start */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.orange-text {
+  color: #f67e7e;
+}
+
+img {
+  display: flex;
+}
+
+svg {
+  display: flex;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: "Livvic", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 600;
+  background-color: #014e56;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: 1210px;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  border: 2px solid transparent;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  padding: 9px 33px 11px 32px;
+  border-radius: 24px;
+  transition: 0.5s;
+  &:active {
+    opacity: 70%;
+  }
+}
+
+.btn-white {
+  color: white;
+  border-color: #ffffff;
+  &:hover {
+    background-color: #ffffff;
+    color: #002529;
+  }
+}
+
+.btn-dark {
+  color: #002529;
+  border-color: #002529;
+  &:hover {
+    background-color: #002529;
+    color: #ffffff;
+  }
+}
+
+.divider {
+  height: 4px;
+  width: 50px;
+}
+
+.blue-divider {
+  background-color: #79c8c7;
+}
+
+.orange-divider {
+  background-color: #f67e7e;
+}
+
+#active {
+  color: #f67e7e;
+}
+
+/* global end  */
+
+/* header start */
+.header {
+  background-color: #014e56;
+  padding-top: 73px;
+  padding-bottom: 73px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.sitelogo {
+  margin-right: 80px;
+  color: #ffffff;
+}
+
+.site-logo-image {
+  &:hover {
+    opacity: 80%;
+    transition: 0.3s;
+  }
+  &:active {
+    opacity: 35%;
+  }
+}
+
+.sitenav {
+  margin-right: auto;
+}
+.sitenav-list {
+  display: flex;
+  gap: 40px;
+}
+.sitenav-item {
+}
+.sitenav-link {
+  color: #ffffff;
+  &:hover {
+    color: #f67e7e;
+  }
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+/* header end */
+
+/* main end*/
+
+/* footer start */
+.footer-pink {
+  background-color: #f67e7e;
+  background-image: url(../images/footer-p-bgi.svg);
+  background-position: bottom -100px left;
+  background-repeat: no-repeat;
+}
+
+.footer-pink .footer-pink-container {
+  padding-top: 76px;
+  padding-bottom: 76px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-pink-title-item {
+}
+.footer-pink-title {
+  font-size: 48px;
+  line-height: 48px;
+  margin-left: 126px;
+}
+.footer-pink-link {
+}
+.footer-pink-btn {
+  background-color: #f67e7e;
+  color: #012f34;
+  border: 2px solid #012f34;
+  &:hover {
+    background-color: #012f34;
+    color: #f67e7e;
+  }
+}
+
+.footer-b {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: #002529;
+  color: #ffffff;
+}
+.footer-container {
+  display: flex;
+}
+
+.footer-nav {
+  margin-right: 125px;
+}
+.footer-nav .sitelogo {
+  margin-bottom: 25px;
+}
+
+.footer-info {
+  margin-right: auto;
+}
+
+.footer-info address {
+  opacity: 0.6;
+  font-style: normal;
+}
+
+.footer-terms-text {
+  opacity: 0.6;
+}
+
+.footer-tel {
+  color: inherit;
+}
+.footer-terms {
+}
+.footer-socials {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  align-items: center;
+}
+.footer-socials-icon {
+  &:active {
+    opacity: 0.8;
+  }
+}
+.footer-icon-link {
+  margin-bottom: 51px;
+}
+
+.footer-socials-icon:hover svg path {
+  fill: #f67e7e;
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+/* footer end */
